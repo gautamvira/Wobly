@@ -18,7 +18,7 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="react_desc">Tap the purple box as soon as it turns green</string>
+    <string name="react_desc">Tap the blue box as soon as it turns green</string>
     <string name="Visual_memory">Visual Memory</string>
     <string name="visual_memory_explination">Please memorise the animals below in the order</string>
     <string name="secondimage">Secondimage</string>
@@ -26,7 +26,7 @@
     <string name="firstimage">FirstImage</string>
     <string name="color_yellow">Yellow</string>
     <string name="color_red">Red</string>
-    <string name="color_blue">Blue</string>
+    <string name="color_blue">Purple</string>
     <string name="color_green">Green</string>
     <string name="tap_desc">Tap the circles according to the color displayed</string>
     <string name="select_images">Select the images in order</string>

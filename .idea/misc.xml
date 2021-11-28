@@ -5,10 +5,13 @@
       <map>
         <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/activity_code_substitution_test.xml" value="0.264" />
         <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/activity_gait_test.xml" value="0.2346014492753623" />
+        <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/activity_gait_test_history.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/activity_main.xml" value="0.2346014492753623" />
         <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/activity_reaction_test.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/activity_results.xml" value="0.2346014492753623" />
         <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/activity_screen_tap_test.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/activity_user_history.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/activity_visual_memory.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/fragment_drunktest.xml" value="0.2346014492753623" />
         <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/fragment_middle.xml" value="0.213768115942029" />
         <entry key="..\:/Users/Android/DrunkApp/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
@@ -17,7 +20,6 @@
         <entry key="..\:/Users/siddh/AndroidStudioProjects/DrunkApp/app/src/main/res/drawable/home_main.xml" value="0.403125" />
         <entry key="..\:/Users/siddh/AndroidStudioProjects/DrunkApp/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.23489583333333333" />
         <entry key="..\:/Users/siddh/AndroidStudioProjects/DrunkApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.403125" />
-        <entry key="..\:/Users/siddh/AndroidStudioProjects/DrunkApp/app/src/main/res/drawable/tab_color.xml" value="0.403125" />
         <entry key="..\:/Users/siddh/AndroidStudioProjects/DrunkApp/app/src/main/res/layout/activity_code_substitution_test.xml" value="0.38632246376811596" />
         <entry key="..\:/Users/siddh/AndroidStudioProjects/DrunkApp/app/src/main/res/layout/activity_edit_profile_data.xml" value="0.38632246376811596" />
         <entry key="..\:/Users/siddh/AndroidStudioProjects/DrunkApp/app/src/main/res/layout/activity_gait_test.xml" value="0.38632246376811596" />

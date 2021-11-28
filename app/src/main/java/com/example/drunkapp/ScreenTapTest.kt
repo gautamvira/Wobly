@@ -60,7 +60,7 @@ class ScreenTapTest : AppCompatActivity() {
                         textview.setText("Tap Red")
                     }
                     1 -> {
-                        textview.setText("Tap Blue")
+                        textview.setText("Tap Purple")
                     }
                     2 -> {
                         textview.setText("Tap Green")
@@ -80,7 +80,7 @@ class ScreenTapTest : AppCompatActivity() {
                                 textview.setText("Tap Red")
                             }
                             1 -> {
-                                textview.setText("Tap Blue")
+                                textview.setText("Tap Purple")
                             }
                             2 -> {
                                 textview.setText("Tap Green")
@@ -104,7 +104,7 @@ class ScreenTapTest : AppCompatActivity() {
                                 textview.setText("Tap Red")
                             }
                             1 -> {
-                                textview.setText("Tap Blue")
+                                textview.setText("Tap Purple")
                             }
                             2 -> {
                                 textview.setText("Tap Green")
@@ -128,7 +128,7 @@ class ScreenTapTest : AppCompatActivity() {
                                 textview.setText("Tap Red")
                             }
                             1 -> {
-                                textview.setText("Tap Blue")
+                                textview.setText("Tap Purple")
                             }
                             2 -> {
                                 textview.setText("Tap Green")
@@ -152,7 +152,7 @@ class ScreenTapTest : AppCompatActivity() {
                                 textview.setText("Tap Red")
                             }
                             1 -> {
-                                textview.setText("Tap Blue")
+                                textview.setText("Tap Purple")
                             }
                             2 -> {
                                 textview.setText("Tap Green")

@@ -43,7 +43,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/meter" />
+                    android:src="@drawable/visual" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/mediumwalk" />
+                    android:src="@drawable/walking" />
 
                 <TextView
                     android:layout_width="wrap_content"

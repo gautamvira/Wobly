@@ -92,8 +92,7 @@ class GaitTest : AppCompatActivity(), SensorEventListener {
         val filename2 = "setup_motion2.csv"
         val filename3 = "test_motion1.csv"
         val filename4 = "test_motion2.csv"
-        val path = getExternalFilesDir(null)   //get file directory for this package
-//(Android/data/.../files | ... is your app package)
+        val path = getExternalFilesDir(null)
 
         //create fileOut object
         if(testtype == "setup") {
@@ -145,7 +144,6 @@ class GaitTest : AppCompatActivity(), SensorEventListener {
                         csvReader().open("${path}/${filename1}") {
                             readAllAsSequence().forEach { row: List<String> ->
                                 if (count1 != 0  && count1 < rows.size) {
-                                    //if (row[0] == rows[count1][0]) {
                                         accelx += (Math.abs(rows[count1][1].toFloat() - row[1].toFloat())/Math.abs(row[1].toFloat()))
                                         summ1 += Math.abs(row[1].toFloat())
                                         accely += (Math.abs(rows[count1][2].toFloat() - row[2].toFloat())/Math.abs(row[2].toFloat()))
@@ -156,7 +154,7 @@ class GaitTest : AppCompatActivity(), SensorEventListener {
                                         accely2 += row[2].toFloat()
                                         accelz2 += row[3].toFloat()
                                         counter++
-                                    //}
+
                                 }
                                 count1++
                             }
@@ -171,7 +169,6 @@ class GaitTest : AppCompatActivity(), SensorEventListener {
                     csvReader().open("${path}/${filename2}") {
                         readAllAsSequence().forEach { row: List<String> ->
                             if (count2 != 0  && count2 < rows2.size) {
-                                //if (row[0] == rows[count2][0]) {
                                     gyrox += (Math.abs(rows2[count2][1].toFloat() - row[1].toFloat())/Math.abs(row[1].toFloat()))
                                     summx += Math.abs(row[1].toFloat())
                                     gyroy += (Math.abs(rows2[count2][2].toFloat() - row[2].toFloat())/Math.abs(row[2].toFloat()))
@@ -182,60 +179,10 @@ class GaitTest : AppCompatActivity(), SensorEventListener {
                                     gyroy2 += row[2].toFloat()
                                     gyroz2 += row[3].toFloat()
                                     counter2++
-                                //}
                             }
                             count2++
                         }
                     }
-                    /*
-                    val avergacx = (accelx2/counter)
-                    val averggyx = (gyrox2/counter2)
-                    val avergacy = (accely2/counter)
-                    val averggyy = (gyroy2/counter2)
-                    val avergacz = (accelz2/counter)
-                    val averggyz = (gyroz2/counter2)
-                    var rowx = 0F
-                    var rowy = 0F
-                    var rowz = 0F
-                    var colx = 0F
-                    var coly = 0F
-                    var colz = 0F
-                    var counter3 = 0
-                    var counter4 = 0
-                    csvReader().open(fileOut1) {
-                        readAllAsSequence().forEach { row: List<String> ->
-                            if(row[1] != "Accel X") {
-                                rowx += (row[1].toFloat() - avergacx).pow(2)
-                                rowy += (row[2].toFloat() - avergacy).pow(2)
-                                rowz += (row[3].toFloat() - avergacz).pow(2)
-                                counter3++
-                            }
-                        }
-                    }
-                    csvReader().open(fileOut2) {
-                        readAllAsSequence().forEach { row: List<String> ->
-                            if(row[1] != "Gyro X") {
-                                colx += (row[1].toFloat() - averggyx).pow(2)
-                                coly += (row[2].toFloat() - averggyy).pow(2)
-                                colz += (row[3].toFloat() - averggyz).pow(2)
-                                counter4++
-                            }
-                        }
-                    }
-
-                     */
-                    /*
-                    val devaccx = (Math.sqrt((rowx / counter3).toDouble()))
-                    val devaccy = Math.sqrt(rowy / counter3.toDouble())
-                    val devaccz = Math.sqrt(rowz / counter3.toDouble())
-                    val devgyrx = Math.sqrt(colx / counter4.toDouble())
-                    val devgyry = Math.sqrt(coly / counter4.toDouble())
-                    val devgyrz = Math.sqrt(colz / counter4.toDouble())
-                    var avgdevacc = (devaccx + devaccy +devaccz)/3
-                    var avgdevgyr = (devgyrx + devgyry + devgyrz)/3
-
-                     */
-
 
                     val averagex = ((accelx/counter))
                         println(averagex)
@@ -254,8 +201,10 @@ class GaitTest : AppCompatActivity(), SensorEventListener {
                     var avggyro = avgx + avgy + avgz
                         avggyro /= 3
 
-                    if(avggyro < 4)
+                    if(avggyro < 4) {
                         gyroscope3.setText("Your movement was not registered correctly. Please Try Again.")
+                        imageview.setImageDrawable(resources.getDrawable(R.drawable.confused))
+                    }
                     else{
                         if(avgaccel <= 0.7){
                             avgaccel *= 10
@@ -304,40 +253,7 @@ class GaitTest : AppCompatActivity(), SensorEventListener {
                     accelerometer1.setText("")
                     accelerometer2.setText("")
                 }
-                //val intent = Intent(this, MainActivity::class.java)
-                //startActivity(intent)
-               // finish()
             }
-            /*
-            //var urr1: Uri = Uri.fromFile(fileOut2)
-            //var urr: Uri = Uri.fromFile(fileOut1)
-            val urr = FileProvider.getUriForFile(
-                this,
-                "com.example.drunkapp.provider",  //(use your app signature + ".provider" )
-                fileOut1
-            )
-            val urr1 = FileProvider.getUriForFile(
-                this,
-                "com.example.drunkapp.provider",  //(use your app signature + ".provider" )
-                fileOut2
-            )
-            var uris = ArrayList<Uri>()
-            uris.add(urr)
-            uris.add(urr1)
-            if(uris == null)
-                println("still null")
-            val email: String = "mailto:@lakeheadu.ca"
-            val sendIntent = Intent(Intent.ACTION_SEND_MULTIPLE)
-            //data = Uri.parse("mailto:")
-            sendIntent.type = "plain/text"
-            sendIntent.putExtra(Intent.EXTRA_EMAIL, email)
-            sendIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Data CSV")
-            sendIntent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris)
-            startActivity(Intent.createChooser(sendIntent, "SHARE"))
-            finish()
-
-             */
         }, 10000)
     }
 

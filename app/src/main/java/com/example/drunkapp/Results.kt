@@ -49,15 +49,16 @@ class Results : AppCompatActivity() {
             pres.setProgress(total_diff)
             if(total_diff < 30){
                 pres.progressTintList = ColorStateList.valueOf(Color.GREEN)
-                testres.setText("Your Visual impairment was low")
+                //pres.progressDrawable.setTint(R.color.green)
+                testres.setText("Visual Impairment: LOW")
             }
             else if(total_diff < 60){
                 pres.progressTintList = ColorStateList.valueOf(Color.YELLOW)
-                testres.setText("Your Visual impairment was Above Average")
+                testres.setText("Visual Impairment: ABOVE AVERAGE")
             }
             else{
                 pres.progressTintList = ColorStateList.valueOf(Color.RED)
-                testres.setText("Your Visual impairment was Very High")
+                testres.setText("Visual Impairment: VERY HIGH")
             }
 
 

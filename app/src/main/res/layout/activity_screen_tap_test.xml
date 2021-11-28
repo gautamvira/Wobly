@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#33a1fd"
     tools:context=".ScreenTapTest">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/tap_desc"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +27,7 @@
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:background="@drawable/circle"
-        android:backgroundTint="#3232FF"
+        android:backgroundTint="@color/purple_200"
         android:text="@string/color_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/greenbutton"
@@ -46,15 +47,15 @@
         app:layout_constraintBottom_toTopOf="@+id/yellowbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/screentaptext"
-        app:layout_constraintVertical_bias="0.353" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/greenbutton"
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:background="@drawable/circle"
-        android:backgroundTint="#32FF32"
+        android:backgroundTint="@color/green"
         android:text="@string/color_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/screentaptext"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintVertical_bias="0.545" />
 
     <TextView
         android:id="@+id/TimerScreentap"
@@ -81,6 +82,8 @@
         android:layout_height="23dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

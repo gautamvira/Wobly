@@ -68,6 +68,11 @@ class MainActivity : AppCompatActivity() {
         //finish()
     }
 
+    fun GaitTestHistory(view: View?){
+        val intent = Intent(this, GaitTestHistory::class.java)
+        startActivity(intent)
+    }
+
     override fun onDestroy() {
         var fileOut1: File
         var fileOut2: File
@@ -78,8 +83,8 @@ class MainActivity : AppCompatActivity() {
         var path = getExternalFilesDir(null)
         fileOut1 = File(path, filename1)
         fileOut2 = File(path, filename2)
-        fileOut1.delete()
-        fileOut2.delete()
+        //fileOut1.delete()
+        //fileOut2.delete()
         super.onDestroy()
     }
 

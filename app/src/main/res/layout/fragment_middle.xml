@@ -44,7 +44,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="64dp"
-                    android:src="@drawable/vistest" />
+                    android:src="@drawable/visual" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
             android:layout_marginBottom="8dp"
             android:clickable="true"
             android:focusable="true"
-            android:onClick="UserHistoryIntent"
+            android:onClick="GaitTestHistory"
             app:cardBackgroundColor="#112D43"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
@@ -88,7 +88,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="64dp"
-                    android:src="@drawable/walkingtest" />
+                    android:src="@drawable/walking" />
 
                 <TextView
                     android:layout_width="wrap_content"
