@@ -6,8 +6,8 @@
         android:icon="@drawable/home_main"
         android:title="Home" />
 
-    <item android:title="Profile"
-        android:icon="@drawable/person_main"
+    <item android:title="History"
+        android:icon="@drawable/history"
         android:id="@+id/Profile_screen"/>
 
     <item android:title="Settings"

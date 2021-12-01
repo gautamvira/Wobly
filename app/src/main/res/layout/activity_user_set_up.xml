@@ -13,9 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="244dp"
         android:layout_marginTop="24dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
         android:text="Siddhant"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -26,10 +27,11 @@
         android:layout_marginStart="244dp"
         android:layout_marginTop="32dp"
         android:text="807 561 7854"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/trus1ofuser"
@@ -38,10 +40,11 @@
         android:layout_marginStart="244dp"
         android:layout_marginTop="28dp"
         android:text="807 561 8990"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/ageofuser"
@@ -50,10 +53,11 @@
         android:layout_marginStart="244dp"
         android:layout_marginTop="28dp"
         android:text="21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView14"
@@ -62,10 +66,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Trusted Contact 2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView13"
@@ -74,10 +79,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:text="Trusted Contact 1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView12"
@@ -86,22 +92,24 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:text="Age"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
         android:layout_marginTop="16dp"
-        android:text="User Set Up test"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="Profile"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
@@ -110,10 +118,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="Name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/SaveButton"

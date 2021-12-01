@@ -30,15 +30,15 @@ class UserHistory : AppCompatActivity() {
             pres.setProgress(total_diff)
             if(total_diff < 30){
                 pres.progressTintList = ColorStateList.valueOf(Color.GREEN)
-                testres.setText("Your Last Visual impairment was low ")
+                testres.setText("Visual Impairment: LOW")
             }
             else if(total_diff < 60){
                 pres.progressTintList = ColorStateList.valueOf(Color.YELLOW)
-                testres.setText("Your Last Visual impairment was Above Average")
+                testres.setText("Visual Impairment: MEDIUM")
             }
             else{
                 pres.progressTintList = ColorStateList.valueOf(Color.RED)
-                testres.setText("Your Last Visual impairment was Very High")
+                testres.setText("Visual Impairment: HIGH")
             }
         }
 
